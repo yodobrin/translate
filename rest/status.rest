@@ -1,0 +1,8 @@
+@id= 42202574-0798-4e18-a8c6-76cc926af073
+@base_url={{$dotenv translate_base_url}} 
+@key = {{$dotenv cog_key}}
+
+GET https://{{base_url}}.cognitiveservices.azure.com/translator/text/batch/v1.0/batches/{{id}}/documents
+Ocp-Apim-Subscription-Key: {{key}}
+
+ 

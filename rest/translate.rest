@@ -1,0 +1,27 @@
+@base_url={{$dotenv translate_base_url}} 
+@lang = {{$dotenv lang}}
+@target = {{$dotenv target_container}}
+@source = {{$dotenv source_container}}
+
+@key = {{$dotenv cog_key}}
+POST https://{{base_url}}.cognitiveservices.azure.com/translator/text/batch/v1.0/batches
+Content-Type: application/json 
+Ocp-Apim-Subscription-Key: {{key}}
+
+{
+    "inputs": [
+        {
+            "source": {
+                "sourceUrl": "{{source}}"
+            },
+            "targets": [
+                {
+                    "targetUrl": "{{target}}",
+                    "language": "{{lang}}"
+                }
+            ]
+        }
+    ]
+}
+# https://ydtranslate.cognitiveservices.azure.com/translator/text/batch/v1.0/batches/d85c7c2d-f34d-4c16-b1a4-f04a8ddf1a97
+
