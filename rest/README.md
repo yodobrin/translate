@@ -1,6 +1,6 @@
 # Translate - leveraging Cognitive Services
 
-TBD
+TBD what?
 
 ## Structure
 
