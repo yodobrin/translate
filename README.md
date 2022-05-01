@@ -6,7 +6,31 @@ TBD what?
 
 TBD
 
-### Setup
+## Components
+
+### Functions
+
+#### Create Container
+
+Inputs: name, required sas behaviour (flags)
+Output: SAS token based on the flags
+
+#### Upload to Container
+
+Inputs: byte [], name
+Output: boolean
+
+#### Translate
+
+Inputs: source, target (SAS tokens), translateTo
+Output: operationID
+
+#### Status
+
+Inputs: operationID
+Output: boolean
+
+### REST Setup
 
 You will need to create a .env file at the same location of the rest scripts - this is the content it will require:
 
