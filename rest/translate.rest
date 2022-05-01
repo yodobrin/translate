@@ -23,5 +23,3 @@ Ocp-Apim-Subscription-Key: {{key}}
         }
     ]
 }
-# https://ydtranslate.cognitiveservices.azure.com/translator/text/batch/v1.0/batches/d85c7c2d-f34d-4c16-b1a4-f04a8ddf1a97
-
